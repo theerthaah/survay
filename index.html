@@ -1,85 +1,50 @@
-<!-- <!DOCTYPE html
 
-
-  <head>
-    <style>
-        body{
-            background-image: ;
-
-        } -->
-<!--     
-    /* </style>
-   <h1 id="SURVEY FORM" class="c1">SURVEY FORM</h1>     
-  <label>Name:</label>
-  <input type="text" required placeholder="enter your Name"><br>
-  <label>Email:</label>
-  <input type="Email" required placeholder="enter your Email"><br>
-  <label>Age:</label>
-  <input type="Age" required placeholder="Age"><br>
-  <label>How likely is that you would recommend this program to a friend:</label>
-  <input type="radio" name="gender" value="definitely">
-  <label>definitely</label>
-  <br>
-  <input type="radio" name="" value="maybe">
-  <label>maybe</label>
-  <br>
-  <input type="radio" name="" value="notsure">
-  <label>notsure</label>
-  <br><br>
-
-</head>
-
-
-  <input type="button" value="click">
-  <input type="submit">
-  <input type="reset">
-
-
-
-
-
-  </fieldset>
-  <button type="submit">Register</button> -->
-
-<!-- </form> */ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <style>
     body{
-        background-image: url('download.jpg');
+        background-image:url(downlodsss.jpg);
         background-repeat: no-repeat;
         background-size:cover;
        } 
-       div{width: 500px;
-        height: 400px;
+       div{width: 700px;
+        height: 500px;
         background-color: aliceblue;
-        margin-top: 100px;
+        margin-top: 50px;
 
        }
     </style>
 <body>
     <center>
-        <h3>SURVEY FORM</h3>
+        
+            <h1  style="color: rgb(223, 220, 217);">SURVEY FORM</h1>
         <div>
-            <h5>let us know how we can improve</h5>
+            <h3>let us know how we can improve</h3>
+
             <table>
                 <tr>
-                    <td align="end"><label for="">name:</label></td>
-                    <td><input type="text"></td>
+                    <td align="end"><label for="name">*Name:</label></td>
+                    <td><input type="text" id="name" name="name" required placeholder="Enter your name"></td>
                 </tr>
                 <tr>
-                    <td align="end"><label for="">email:</label></td>
-                    <td><input type="text"></td>
+                    <td align="end"><label>*Email</label></td>
+                    <td><input type="email" required placeholder="Enter your email"><br></td>
                 </tr>
-                  <tr>
-                    <td align="end"><label for="">Age:</label></td>
-                    <td><input type="text"></td>
+                <tr>
+                    <td align="end"> <label for="">*Age</label></td>
+                    <td><input type="number" placeholder="Age"><br></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td><input type="file"></td>
+                    <td> <input type="file"> <br></td>
                 </tr>
+
                 <tr>
                     <td align="end"><label >Which option best describe your role?</label></td>
 
@@ -90,51 +55,64 @@
                             <option value="dfg" >working</option>
                             <option value="selected disabled" >--Select an option--</option>
                         </select></td>
-                </tr>
-                <tr>
-                    <td><label for="">how ikely is that would recommendthis program to a friend</label></td>
-                    <td>
-                        <input type="radio">definitely<br>
-                        <input type="radio">maybe<br>
-                        <input type="radio">notsure<br>
-                        
-                    </td>
-                  <tr>
-                    <td><label for="">what do you like most here:</label></td>   
-                    <td><select name=" select an option" id="">
-
-
-                            <option value="abc" ></option>
-                            <option value="dfg" ></option>
-                            <option value="selected disabled" >--Select an option--</option>
-                        </select></td>
-                </tr>
-                  <label>skill:</label><br>
-  <input type="checkbox" value="front end project">
-  <label>HTML</label>
-  <br>
-  <input type="checkbox" value="back-end project">
-  <label>CSS</label>
-  <br>
-  <input type="checkbox" name="data visualization">
-  <label>javascript</label>
-  <br>
-
-
-                
                 </tr>
 
-            </table>
-        </div>
 
+                <tr>
+                    <td align="end"><label >*How likely is that you would recommented this program to a friend?</label></td>
+
+                    <td><input type="radio" name="likely" value="definitly">
+                        <label for="">Definitely</label><br>
+                        <input type="radio" name="likely" value="maybe">
+                        <label for="">Maybe</label><br>
+                        <input type="radio" name="likely" value="not sure">
+                        <label for="">Not sure</label><br>
+                    </td>
+                </tr>
+
+ <tr>
+                    <td align="end"><label >What do you like most</label></td>
+
+                    <td><select name="" id="">
+
+
+                            <option value="nm" >class</option>
+                            <option value="jk" >group</option>
+                            <option value="selected an option" >--Select an option--</option>
+                        </select></td>
+                </tr>
+
+
+                <tr>
+                    <td align="end">
+                        <label >Thing that should be improved in the future check all that apply? </label>
+                    </td>
+                    <td> <input type="checkbox" name="op1" value="op1">
+                        <label for="ckbox">Frond-end project</label><br>
+                        <input type="checkbox" name="op2" value="op2">
+                        <label for="ckbox">Back-end project</label><br>
+                        <input type="checkbox" name="op3" value="op3">
+                        <label for="ckbox">Back-end project</label><br>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="end">
+                        <label >Any Comment or Suggestions?</label>
+                    </td>
+                    <td>
+                        <textarea cols="20" rows="5" placeholder="Enter your comment here..."></textarea>
+                    </td>
+                </tr>
+
+
+            </table>
+             <button type="submit">Submit</button><br><br>
+        </div>
     </center>
 
 
-    
 </body>
-    
 
-
-
-</style>
 </html>
+
